@@ -1,11 +1,11 @@
 <div class="container">
   <mat-icon>assignment</mat-icon>
   <div class="title">
-    <h1>Your Current Properties</h1>
+    <h1>现有的性质</h1>
   </div>
 </div>
 
-<button mat-raised-button (click)="gotoCreateSp()" class='addnew'>Add a New Property <mat-icon class="add-icon">add</mat-icon></button>
+<button mat-raised-button (click)="gotoCreateSp()" class='addnew'>添加一个新性质 <mat-icon class="add-icon">add</mat-icon></button>
 
 <mat-list>
   <mat-list-item class="sp-display" *ngFor="let sp of SPS; let i = index">

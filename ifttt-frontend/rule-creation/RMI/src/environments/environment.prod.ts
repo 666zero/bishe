@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://super.cs.uchicago.edu/superiftttdjango/'
+  apiUrl: 'http://121.4.153.31:8000/'
 };

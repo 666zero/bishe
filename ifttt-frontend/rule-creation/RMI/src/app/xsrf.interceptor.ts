@@ -18,3 +18,4 @@ export class XsrfInterceptor implements HttpInterceptor {
         return next.handle(requestToForward);
     }
 }
+//把随机数放到token里面

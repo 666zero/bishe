@@ -32,6 +32,7 @@ export class VipageComponent implements OnInit {
     this.userDataService.getCsrfCookie().subscribe(dataCookie => {
       this.router.params.subscribe(params => {
         // then get hashed_id and task_id from router params
+
         if (!this.userDataService.user_id) {
           this.userDataService.mode = "rules";
           this.userDataService.hashed_id = params["hashed_id"];
@@ -122,11 +123,13 @@ export class VipageComponent implements OnInit {
   }
 
   gotoPrev() {
+    console.log("这个是gotoPrev");
     this.currentIndex = this.currentIndex==0 ? this.currentIndex : this.currentIndex-1;
     this.CURRENTPATCH = this.PATCHES[this.currentIndex];
   }
 
   gotoNext() {
+    console.log("这个是gotoNext");
     this.currentIndex = this.currentIndex+1<this.patchNum ? this.currentIndex+1 : this.currentIndex;
     this.CURRENTPATCH = this.PATCHES[this.currentIndex];
   }

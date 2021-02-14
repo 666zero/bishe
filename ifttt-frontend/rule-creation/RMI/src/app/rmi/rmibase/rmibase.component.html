@@ -1,13 +1,13 @@
 <div class="container">
   <mat-icon>assignment</mat-icon>
   <div class="title">
-    <h1>Your Current Rules</h1>
+    <h1>现有的规则集</h1>
   </div>
   <div class="newrule">
   </div> 
 </div>
 
-<button mat-raised-button (click)="gotoCreate()" class='addnew'>Add a New Rule <mat-icon class="add-icon">add</mat-icon></button>
+<button mat-raised-button (click)="gotoCreate()" class='addnew'>加入一个新规则<mat-icon class="add-icon">add</mat-icon></button>
 
 <mat-list>
   <mat-list-item class="rule-display" *ngFor="let rule of RULES; let i = index">

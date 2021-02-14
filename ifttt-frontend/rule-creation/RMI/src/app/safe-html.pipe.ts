@@ -8,4 +8,5 @@ export class SafeHtmlPipe implements PipeTransform {
   transform(style: string) {
     return this.sanitizer.bypassSecurityTrustStyle(style);
   }
+
 }

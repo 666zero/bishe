@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'backend',
     'st_end',
     'autotap',
+    'autotapmc',
 ]
 
 MIDDLEWARE = [
@@ -101,10 +102,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ifttt',
-        'USER': 'iftttuser',
-        'PASSWORD': 'password',
-        'HOST': 'postgres'
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'wangchang1',
+        'HOST': '121.4.153.31',
+        'PORT': '5432',
         }
 }
 
@@ -158,9 +160,11 @@ CSRF_TRUSTED_ORIGINS = []
 CORS_ORIGIN_WHITELIST = (
     '127.0.0.1:4200',
     'localhost:4200',
+    '121.4.153.31:4200',
+    '121.4.153.31:8000',
 )
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 
 # allow cookies for cross-site HTTP request
 CORS_ALLOW_CREDENTIALS = True

@@ -26,7 +26,7 @@ export class VibaseComponent implements OnInit {
     var sp_url = this.router.url + '/sp'
     return this.sanitizer.bypassSecurityTrustResourceUrl(sp_url);
   }
-
+  //防止XSS攻击
   rLocation() {
     var r_url = this.router.url + '/rules'
     return this.sanitizer.bypassSecurityTrustResourceUrl(r_url);
@@ -35,7 +35,7 @@ export class VibaseComponent implements OnInit {
   getIFrameWidth() {
     return Math.floor(this.innerWidth/2.01);
   }
-
+  //进行验证
   gotoVerify() {
     this.router.navigate(["verify"], {relativeTo: this.activatedRoute});
   }
