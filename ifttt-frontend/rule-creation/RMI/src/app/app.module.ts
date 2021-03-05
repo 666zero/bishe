@@ -29,6 +29,7 @@ const routes: Routes = [
   declarations: [
     AppComponent
   ],
+  //属于本模块的组件，指令，管道
   imports: [
     BrowserModule, RmiModule, RciModule, SpmiModule, SpciModule, ViModule, 
     SharedModule, BrowserAnimationsModule,
@@ -40,9 +41,11 @@ const routes: Routes = [
       headerName: 'X-CSRFToken'
     }),
   ],
+  //本模块的组件模板中需要的类
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: XsrfInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
+  //只有根组件才能从这里启动
 })
 export class AppModule { }

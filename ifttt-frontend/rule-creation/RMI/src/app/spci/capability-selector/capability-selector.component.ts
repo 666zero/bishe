@@ -3,11 +3,14 @@ import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
 import {UserDataService, Device, Capability, Channel} from '../../user-data.service';
 
+//user-data.service是包含基本数据类型的元数据文件
+
 @Component({
   selector: 'app-capability-selector',
   templateUrl: './capability-selector.component.html',
   styleUrls: ['./capability-selector.component.css']
 })
+
 export class CapabilitySelectorComponent {
 
   public selectedDeviceID: number;

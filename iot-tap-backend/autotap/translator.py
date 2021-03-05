@@ -1,19 +1,3 @@
-"""
-Copyright (C) 2018-2019  Jesse Martinez, Lefan Zhang, Weijia He, Noah Brackenbury
-
-iot-tap-backend is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-iot-tap-backend is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with iot-tap-backend.  If not, see <https://www.gnu.org/licenses/>.
-"""
 
 import backend.models as m
 from backend.views import trigger_to_clause, state_to_clause, time_to_int
@@ -68,7 +52,7 @@ def split_autotap_formula(formula):
     par = cap_par.split('_')[-1]
     return dev, cap, par, comp, val
 
-
+#replace替换方法
 def _dev_name_to_autotap(name):
     name = name.replace(' ', '_').lower()
     name = ''.join([ch for ch in name if ch.isalnum() or ch == '_'])
@@ -113,6 +97,7 @@ def _regular_statement_clause_generator(dev_autotap, cap_autotap, par_autotap, c
     cap_name_list = [_cap_name_to_autotap(cap.name) for cap in cap_list_backend]
     capability = cap_list_backend[cap_name_list.index(cap_autotap)]
 
+    #填充这个list
     # Step 3: fill in the parameters and values
     parameters = list()
     parameter_vals = list()
@@ -223,6 +208,8 @@ def _music_statement_clause_generator(val, comp, neg):
             parameter_vals.append({'comparator': '!=', 'value': genre.value})
         return parameters, parameter_vals
 
+#intersection求交集的函数
+#set求集合的元素
 
 def _guess_channel(device, capability):
     dev_chans = set(device.chans.all())

@@ -1,22 +1,3 @@
-"""
-Copyright 2017-2019 Lefan Zhang
-
-This file is part of AutoTap.
-
-AutoTap is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-AutoTap is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with AutoTap.  If not, see <https://www.gnu.org/licenses/>.
-"""
-
 
 import autotapmc.buchi.Buchi as Buchi
 import os
@@ -29,7 +10,12 @@ def generateGraph(system, ltl, folder, only_action=False):
     ts = system.transition_system
     buchi_ts = Buchi.tsToGenBuchi(ts)
     buchi_ltl = Buchi.ltlToBuchi(ltl)
+
     (buchi_final, pairs) = Buchi.product(buchi_ts, buchi_ltl)
+
+    print(str(buchi_ts));
+    print(str(buchi_ltl));
+    print(str(buchi_final));
 
     filename_ts = folder + 'ts.gv' if folder.endswith('/') else folder + '/ts.gv'
     filename_ltl = folder + 'ltl.gv' if folder.endswith('/') else folder + '/ltl.gv'
@@ -54,6 +40,7 @@ def generateGraph(system, ltl, folder, only_action=False):
     os.system('dot -Tpng -o %s %s' % (png_ltl, filename_ltl))
     os.system('dot -Tpng -o %s %s' % (png_final, filename_final))
 
+#os.system执行命令
 
 class ModifiedBuchi(Buchi.GenBuchi):
     def __init__(self, buchi):

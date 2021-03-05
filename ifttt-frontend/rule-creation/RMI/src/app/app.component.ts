@@ -6,6 +6,7 @@ import { UserDataService } from './user-data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+//selector 对应静态html文件的路由选择
 export class AppComponent {
   constructor(public userDataService: UserDataService) {}
   title = 'app';

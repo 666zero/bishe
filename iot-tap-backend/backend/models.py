@@ -1,20 +1,5 @@
-"""
-Copyright (C) 2018-2019  Jesse Martinez, Lefan Zhang, Weijia He, Noah Brackenbury
 
-iot-tap-backend is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-iot-tap-backend is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with iot-tap-backend.  If not, see <https://www.gnu.org/licenses/>.
-"""
-
+#models函数 是通过 Django的model进行数据库操作
 from django.db import models
 import re
 
@@ -48,9 +33,9 @@ class Capability(models.Model):
     commandlabel = models.TextField(null=True,max_length=256)
     eventlabel = models.TextField(null=True,max_length=256)
 
-    def update_paramname(self,old,new):
+    def update_paramname(self, old, new):
         try:
-            p = Parameter.objects.get(name=old,cap_id=self.id)
+            p = Parameter.objects.get(name=old, cap_id=self.id)
         except Parameter.DoesNotExist:
             print("no such param")
             return
@@ -176,6 +161,7 @@ class Condition(models.Model):
 # owner : user who owns device
 # name  : name of device
 # caps  : set of capabilities available to this device (M2M)
+# 这里使用的是级联删除关系
 class Device(models.Model):
     owner = models.ForeignKey(User,on_delete = models.CASCADE)
     public = models.BooleanField(default=True)
@@ -225,6 +211,7 @@ class ESRule(Rule):
 # triggers      : states that must be true to trigger rule
 # priority      : priority value of rule
 # actionstate   : state to make true when rule is triggered
+#相当于创建表
 class SSRule(Rule):
     triggers = models.ManyToManyField(Trigger)
     priority = models.IntegerField()

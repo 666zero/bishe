@@ -1,19 +1,4 @@
-"""
-Copyright (C) 2018-2019  Jesse Martinez, Lefan Zhang, Weijia He, Noah Brackenbury
 
-iot-tap-backend is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-iot-tap-backend is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with iot-tap-backend.  If not, see <https://www.gnu.org/licenses/>.
-"""
 
 import backend.models as m
 
@@ -45,7 +30,7 @@ device_template = {
 
 device_list_backend = [dev.name for dev in m.Device.objects.all().order_by('id')]
 
-
+#join是连接操作，isalnum判断字符串是否由字母和数字组成
 def dev_map_to_backend(dev_name):
     device_list_backend = list(m.Device.objects.all().order_by('id'))
     def _dev_name_to_autotap(name):

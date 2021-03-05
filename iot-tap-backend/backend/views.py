@@ -1,19 +1,4 @@
-"""
-Copyright (C) 2018-2019  Jesse Martinez, Lefan Zhang, Weijia He, Noah Brackenbury
 
-iot-tap-backend is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-iot-tap-backend is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with iot-tap-backend.  If not, see <https://www.gnu.org/licenses/>.
-"""
 
 from django.http import HttpResponse, JsonResponse
 from django.template import loader
@@ -66,7 +51,9 @@ def fe_get_user(request):
 
 # FRONTEND VIEW
 def fe_all_rules(request):
+    print("调用获得所有的规则\n")
     kwargs = json.loads(request.body.decode('utf-8'))
+    print(kwargs)
     json_resp = {'rules' : []}
     
     try:
@@ -94,7 +81,7 @@ def fe_all_rules(request):
                                        'ifClause' : ifclause,
                                        'thenClause' : thenclause,
                                        'temporality' : 'event-state'})
-
+    print("获得所有的规则为" + str(json_resp))
     return JsonResponse(json_resp)
 
 def fe_get_full_rule(request):
@@ -157,6 +144,7 @@ def fe_all_devs_and_chans(request):
 # let frontend get csrf cookie
 @ensure_csrf_cookie
 def fe_get_cookie(request):
+    print("调用backend的get_cookie函数\n")
     return JsonResponse({})
 
 # FRONTEND VIEW
@@ -167,6 +155,7 @@ def fe_all_chans(request):
     json_resp = valid_chans(user,kwargs['is_trigger'])
     return JsonResponse(json_resp)
 
+#any 函数 返回迭代对象是否全部为false，或者为true
 def dev_has_valid_cap(dev,channel,is_trigger):
     poss_caps = dev.caps.all().intersection(m.Capability.objects.filter(channels=channel))
     if is_trigger:
@@ -388,6 +377,8 @@ def check_trigger(trigger):
 
     return True
 
+#检测所有的Trigger是否满足
+
 # update/create PV corresponding to state of a given cap/dev pair
 def update_state(cap,dev,param,val):
     state = get_or_make_state(cap,dev)
@@ -474,7 +465,9 @@ def update_pv(state,par_id,val):
         pv = m.ParVal(state=state,par_id=par_id,val=val)
         pv.save()
 
+#创建几类不同的规则
 # create (OR EDIT) Event State Rule
+
 def fe_create_esrule(request,forcecreate=False):
     kwargs = json.loads(request.body.decode('utf-8'))
     ruleargs = kwargs['rule']
@@ -616,7 +609,7 @@ def trigger_to_clause(trigger,is_event):
             c['parameterVals'].append({'comparator' : cond.comp,
                                        'value' : cond.val})
     return c
-
+#
 def state_to_clause(state):
     c = {'channel' : {'id' : state.chan.id,
                       'name' : state.chan.name,
@@ -702,7 +695,7 @@ def fe_all_sps(request):
     except KeyError:
         user = get_or_make_user(kwargs['code'],'sp')
         json_resp['userid'] = user.id
-
+#list函数把元组转换为列表
     sps = m.SafetyProp.objects.filter(owner=user,task=kwargs['taskid']).order_by('id')
     for sp in sps:
         if sp.type == 1:
