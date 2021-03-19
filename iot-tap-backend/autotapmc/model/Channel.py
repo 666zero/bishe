@@ -68,14 +68,14 @@ class Channel(metaclass=MetaChannel):
 
     def lengthOfStates(self):
         return len(self.state_dict)
-
+#打包一个元组，然后进行分类
     def restoreFromStateVector(self, field):
         if len(field) != len(self.state_dict):
             raise Exception('Length of state vector does not match with channel state length')
         keys = [tup[0] for tup in sorted(self.state_dict.items())]
         for key, value in zip(keys, field):
             self.state_dict[key] = value
-
+#每个设备的属性代表一个状态
     def saveToStateVector(self):
         state_list = [item[1] for item in sorted(self.state_dict.items())]
         return state_list

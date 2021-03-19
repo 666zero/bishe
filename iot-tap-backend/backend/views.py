@@ -9,24 +9,8 @@ import operator as op
 from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 import json
 import re
+#import pdb
 
-######################################
-######################################
-## INDEX                            ##
-## FES :: FRONTEND / SELECTORS      ##
-## STV :: ST-END VIEWS              ##
-## RC  :: RULE CREATION             ##
-## SPC :: SAFETY PROPERTY CREATION  ##
-## SLM :: STATELOG MANAGEMENT       ##
-######################################
-######################################
-
-
-################################################################################
-## [FES] FRONTEND / SELECTORS
-################################################################################
-
-# NOT IN USE
 def fe_all_ruletext(request,**kwargs):
     json_resp = {'rules' : []}
     for rule in m.Rule.objects.filter(owner_id=kwargs['userid']):
@@ -51,7 +35,7 @@ def fe_get_user(request):
 
 # FRONTEND VIEW
 def fe_all_rules(request):
-    print("调用获得所有的规则\n")
+   # print("调用获得所有的规则\n")
     kwargs = json.loads(request.body.decode('utf-8'))
     print(kwargs)
     json_resp = {'rules' : []}
@@ -81,14 +65,14 @@ def fe_all_rules(request):
                                        'ifClause' : ifclause,
                                        'thenClause' : thenclause,
                                        'temporality' : 'event-state'})
-    print("获得所有的规则为" + str(json_resp))
+    #print("获得所有的规则为" + str(json_resp))
     return JsonResponse(json_resp)
 
 def fe_get_full_rule(request):
     kwargs = json.loads(request.body.decode('utf-8'))
     json_resp = {}
     rule = m.Rule.objects.get(id=kwargs['ruleid'])
-
+#创建规则是event和state类型
     if rule.type == 'es':
         rule = rule.esrule
         ifclause = []
@@ -144,7 +128,7 @@ def fe_all_devs_and_chans(request):
 # let frontend get csrf cookie
 @ensure_csrf_cookie
 def fe_get_cookie(request):
-    print("调用backend的get_cookie函数\n")
+    #print("返回cookie函數\n")
     return JsonResponse({})
 
 # FRONTEND VIEW
@@ -585,7 +569,7 @@ def clause_to_trigger(clause):
 
     return t
 
-
+#先处理trigger和condition的类型，关键数据结构
 def trigger_to_clause(trigger,is_event):
     c = {'channel' : {'id' : trigger.chan.id,
                       'name' : trigger.chan.name,
@@ -597,7 +581,10 @@ def trigger_to_clause(trigger,is_event):
                          'label' : (trigger.cap.eventlabel if is_event else trigger.cap.statelabel)},
          'text' : trigger.text,
          'id' : trigger.pos}
+    #把trigger转换为clause进行处理
+    #一开始是trigger后面是clause
     conds = m.Condition.objects.filter(trigger=trigger).order_by('id')
+    #trigger按id进行分类
     if conds != []:
         c['parameters'] = []
         c['parameterVals'] = []
@@ -609,7 +596,7 @@ def trigger_to_clause(trigger,is_event):
             c['parameterVals'].append({'comparator' : cond.comp,
                                        'value' : cond.val})
     return c
-#
+#state中包含多个clause，然後進行轉換，把對象中的信息提取出來轉換為json格式
 def state_to_clause(state):
     c = {'channel' : {'id' : state.chan.id,
                       'name' : state.chan.name,
@@ -681,11 +668,11 @@ def state_to_clause(state):
 
     return c
 
-
+#展示trigger进行
 def display_trigger(trigger):
     return {'channel' : {'icon' : trigger.chan.icon}, 'text' : trigger.text}
 
-
+#获得所有的specification,然后进行测试
 def fe_all_sps(request):
     kwargs = json.loads(request.body.decode('utf-8'))
     json_resp = {'sps' : []}

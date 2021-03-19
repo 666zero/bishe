@@ -1,7 +1,6 @@
 
 from autotapmc.model.Channel import Channel
 
-
 class SimpleTV(Channel):
     power = 0
 

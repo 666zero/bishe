@@ -1,9 +1,8 @@
 
-
 import abc
 from collections import Callable
 
-
+#产生template文件
 def apBoolTemplate(name, is_true=True):
     if is_true:
         return '    def ap_%sIsTrue(self):\n        return self.%s == 1' % (name, name)

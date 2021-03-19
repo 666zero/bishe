@@ -1,7 +1,5 @@
 
-
 from autotapmc.model.Channel import Channel
-
 
 class Weather(Channel):
     rain = 0

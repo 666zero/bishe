@@ -8,7 +8,7 @@ class User(models.Model):
     name = models.CharField(max_length=30,unique=True,null=True)
     code = models.TextField(max_length=128)
     mode = models.CharField(max_length=5,choices=[('rules','Rule'),('sp','Safety Property')])
-
+#多个选项
 # CHANNEL
 # name  : name of Channel
 class Channel(models.Model):
@@ -156,7 +156,7 @@ class Condition(models.Model):
     val = models.TextField()
     comp = models.TextField(choices=[('=',"is"),('!=',"is not"),('<',"is less than"),('>',"is greater than")])
     trigger = models.ForeignKey('Trigger',on_delete = models.CASCADE)
-
+#
 # DEVICE
 # owner : user who owns device
 # name  : name of device

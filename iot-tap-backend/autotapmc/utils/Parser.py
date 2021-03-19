@@ -1,8 +1,7 @@
-
 import re
-# from ltl.Operators import ops, re_splitter
-
-
+#from ltl.Operators import ops, re_splitter
+#把LTL转换为token序列
+#建立操作类，然后进行操作，操作符，参数和优先级
 class Operator(object):
     def __init__(self, op, n_args, precedence, associativity):
         self.op = op
@@ -10,6 +9,7 @@ class Operator(object):
         self.precedence = precedence
         self.associativity = associativity
 
+#操作数，第几个参数，前驱和后继
 
 def _nextToken(formula, re_splitter):
     if not formula:

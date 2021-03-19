@@ -1,22 +1,3 @@
-"""
-Copyright 2017-2019 Lefan Zhang
-
-This file is part of AutoTap.
-
-AutoTap is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-AutoTap is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with AutoTap.  If not, see <https://www.gnu.org/licenses/>.
-"""
-
 
 import autotapmc.buchi.Buchi as Buchi
 from autotapmc.utils.Boolean import calculateBoolean
@@ -30,7 +11,7 @@ from .Build import generateChannelDict, ltlFormat, tapFormat, \
     getChannelList, generateTimeExp, generateCriticalValue, textToformula, namedTapFormat
 import autotapmc.channels.template.Evaluation as DeviceList
 
-
+#tap类属于trigger,action和condition
 class Patch(object):
     def __init__(self, _type='add', tap_name='', tap=Tap()):
         self.type = _type
@@ -57,7 +38,7 @@ class BadEdge(object):
         self.action = action
         self.ltl_req = ltl_req
 
-
+#获得LTL表达式
 def _getLTLReq(buchi_ltl, src_index, dst_index):
     """
     should return a boolean expression: from src_index to accepting states, discard '!_triggered'
@@ -203,16 +184,18 @@ def generateFixForSafety(system, ltl):
 
     field_list = [state.field for state in ts.state_list]
     bad_edges = list()
-
+#来找出所有的集合
     # generate all edges to be fixed
     for edge in buchi_final.edge_list:
         if buchi_final.getStateAcc(edge.dst) and not buchi_final.getStateAcc(edge.src):
             try:
+                #pairs包含第一个选项
                 src_index_ts = pairs[edge.src][0]
                 dst_index_ts = pairs[edge.dst][0]
                 if ts.num_state == src_index_ts:
                     # this is the initial node, skip
                     continue
+                #pairs包含第二个选项
                 src_index_ltl = pairs[edge.src][1]
                 dst_index_ltl = pairs[edge.dst][1]
                 src_field = field_list[src_index_ts]
@@ -259,7 +242,6 @@ def generateFixForSafety(system, ltl):
 
     # return list(itertools.product(*result))
     return result
-
 
 ##########################################  New fix from this line on
 def _generatePattern(crit_value_list, event_list, template):
@@ -362,13 +344,14 @@ def _fixPreProcessing(channel_dict, tap_dict, template_numeric_dict=None, timing
     result._restoreFromStateVector(ts.getField(0))
     return result
 
-
+#从笛卡尔积中找到坏的边
 def _getBadEdges(system, ltl, record_exp_list=[]):
     ts = system.transition_system
     buchi_ts = Buchi.tsToGenBuchi(ts, record_exp_list)
     buchi_ltl = Buchi.ltlToBuchi(ltl)
+    #把LTL转换为Buchi，然后进行计算
     (buchi_final, pairs) = Buchi.product(buchi_ts, buchi_ltl)
-
+    #接受状态
     field_list = [state.field for state in ts.state_list]
     # Stage 1: generate all bad edges
     bad_edges = list()
@@ -385,6 +368,7 @@ def _getBadEdges(system, ltl, record_exp_list=[]):
                 dst_index_ltl = pairs[edge.dst][1]
                 src_field = field_list[src_index_ts]
                 dst_field = field_list[dst_index_ts]
+                #从buchi自动机中求出相关的LTL表示
                 action = _getAction(ts, src_index_ts, dst_index_ts)
                 ltl_req = _getLTLReq(buchi_ltl, src_index_ltl, dst_index_ltl)
                 if buchi_final.getStateAcc(edge.dst):
@@ -773,7 +757,7 @@ def generateCompactFix(ltl, tap_list, init_value_dict={}, template_dict=vars(Dev
 
     return result_taps
 
-
+#产生重要的边界
 def generateNamedFix(ltl, tap_dict, init_value_dict={}, template_dict=vars(DeviceList)):
     # stage 0: remove all duplicated taps
     tap_dict_inv = {v: k for k, v in tap_dict.items()}

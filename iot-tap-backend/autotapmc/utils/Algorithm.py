@@ -1,10 +1,16 @@
 
-
 import itertools
 import copy
 import qm
 
+#查找前驱和后继
 
+#查找多个规则间是否存在串联关系
+
+def checkCycle(graph):
+    pass
+
+def check
 def hittingSet(universe, set_list):
     """
     greedy algorithm that find minimum hitting set (approximate algorithm)
@@ -20,7 +26,6 @@ def hittingSet(universe, set_list):
         set_list = [s for s in set_list if universe[index] not in s]
         del universe[index]
     return result
-
 
 def qmPreProcess(one_list, zero_list):
     """
@@ -54,7 +59,7 @@ def qmPreProcess(one_list, zero_list):
 
     return result_one, result_zero
 
-
+#使用qm算法，减少算法
 def qmAlgorithm(one_list, zero_list):
     """
     perform qm algoithm to reduce the complexibility of a condition list

@@ -1,8 +1,6 @@
-
-
 import abc
-
-
+#把需要tap的類儲存下來
+#condition代表channel的标签
 class Tap(object):
     def __init__(self, action=str(), trigger: str=str(), condition: list=list(), invalid=False):
         """
@@ -56,7 +54,7 @@ class Rule(TapWrapper):
     def toTap(self):
         pass
 
-
+#把不同的Rule进行分类
 class EERule(Rule):
     def __init__(self, trigger, action):
         self.trigger = trigger
@@ -67,7 +65,7 @@ class EERule(Rule):
 
     def toTap(self):
         return Tap(self.action, self.trigger, [])
-
+#condition代表状态是多少的时候
 
 class SERule(Rule):
     def __init__(self, condition, action):
@@ -79,7 +77,7 @@ class SERule(Rule):
 
     def toTap(self):
         return Tap(self.action, '', [self.condition])
-
+#不同的类型进行组成
 
 class SSERule(Rule):
     def __init__(self, condition1, condition2, action):
@@ -106,7 +104,7 @@ class ESERule(Rule):
     def toTap(self):
         return Tap(self.action, self.trigger, [self.condition])
 
-
+#condition代表有一个condition和state对应
 def translateTapToRule(tap):
     if not isinstance(tap, Tap):
         raise TypeError('the input should be a Tap instance')

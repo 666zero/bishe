@@ -9,7 +9,6 @@ ops = {
 
 re_splitter = r'(\s+|\(|\)|\&|\||!)'
 
-
 def calculateBoolean(formula, var_dict):
     """
     given boolean variable value, calculate the value of a boolean formula (!, &, |, brackets are supported)

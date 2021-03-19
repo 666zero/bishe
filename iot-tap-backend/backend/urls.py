@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views as v
 
+
 #include包含外界的函数
 
 urlpatterns = [
@@ -44,7 +45,7 @@ urlpatterns = [
     path('user/sp3/get/',v.fe_get_full_sp3),
     path('user/get_cookie/', v.fe_get_cookie),
     path('manage/', v.manage_user),
-    path('autotap/', include('autotap.urls'))
+    path('autotap/', include('autotap.urls')),
     ]
 '''
     #path('user/new/<str:username>/<str:pass>/',views.new_user),

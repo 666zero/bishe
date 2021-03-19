@@ -10,7 +10,7 @@ def generateGraph(system, ltl, folder, only_action=False):
     ts = system.transition_system
     buchi_ts = Buchi.tsToGenBuchi(ts)
     buchi_ltl = Buchi.ltlToBuchi(ltl)
-
+#求笛卡尔积
     (buchi_final, pairs) = Buchi.product(buchi_ts, buchi_ltl)
 
     print(str(buchi_ts));
@@ -26,12 +26,12 @@ def generateGraph(system, ltl, folder, only_action=False):
     png_final = folder + 'final.png' if folder.endswith('/') else folder + '/final.png'
 
     group = [s2 for s1, s2 in pairs]
-
+#显示文件夹的结果
     try:
         os.stat(folder)
     except:
         os.mkdir(folder)
-
+#创建文件夹
     buchi_ts.writeToGv(filename_ts, only_action=only_action)
     buchi_ltl.writeToGv(filename_ltl)
     buchi_final.writeToGv(filename_final, group, only_action=only_action)

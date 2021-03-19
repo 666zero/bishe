@@ -1,7 +1,5 @@
 
-
 from autotapmc.model.Channel import Channel
-
 
 class SimpleOven(Channel):
     power = 0

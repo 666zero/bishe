@@ -1,7 +1,5 @@
 
-
 from autotapmc.model.Channel import Channel
-
 
 class Location(Channel):
     within = 0

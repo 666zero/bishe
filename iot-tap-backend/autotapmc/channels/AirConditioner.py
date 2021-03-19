@@ -1,7 +1,5 @@
 
-
 from autotapmc.model.Channel import Channel
-
 
 class SimpleAC(Channel):
     power = 0

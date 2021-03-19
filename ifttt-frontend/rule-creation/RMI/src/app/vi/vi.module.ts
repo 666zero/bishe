@@ -27,7 +27,7 @@ const routes: Routes = [
     MatSliderModule, MatListModule, MatButtonModule, MatIconModule, MatSelectModule
   ],
   declarations: [VibaseComponent, VipageComponent],
-  //本module中使用的component
+  //本module中使用的component，只能在一个模块中声明
   exports: [
     RouterModule
   ]

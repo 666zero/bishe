@@ -1,7 +1,6 @@
 
 from autotapmc.model.Channel import Channel
 
-
 class GarageDoor(Channel):
     door_open = 0
 

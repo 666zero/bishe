@@ -1,7 +1,6 @@
 
 from autotapmc.model.Channel import Channel
 
-
 class CoffeeMachine(Channel):
     status = 0
     # 0: idle, 1: poweroff, 2: wrong, 3: brewing, 4: finish

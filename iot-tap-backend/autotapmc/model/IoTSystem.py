@@ -1,4 +1,4 @@
-
+#将前端上传的Trigger-Action规则转换为IoTSystem
 
 import autotapmc.ts.TransitionSystem as TransitionSystem
 import autotapmc.model.Channel as Channel

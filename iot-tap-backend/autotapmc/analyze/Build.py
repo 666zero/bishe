@@ -29,6 +29,7 @@ def _getValueDict(formula):
     }
     post_exp = parse(formula, ops, re_splitter)
     stack = list()
+
     for token in post_exp:
         if token not in ops:
             stack.append(token)
@@ -179,7 +180,7 @@ def generateTimeExp(ltl, tap_list):
 
     return time_exp_list, recorded_list
 
-
+#拿到channel的list
 def getChannelList(ltl, tap_list):
     channel_list = list()
     re_splitter = r'(\s+|\(|\)|\&|\||!|<|>|=|F|G|U|W|\#|\*|X|@)'
@@ -200,6 +201,7 @@ def getChannelList(ltl, tap_list):
         '@': Operator('@', 1, 5, 1)
     }
     ltl_post_exp = parse(ltl, ops, re_splitter)
+    print("getchannellist" + str(ltl_post_exp))
     cap_list = [token for token in ltl_post_exp if token not in ops and '.' in token and not token[0].isnumeric()]
     channel_list = list(set(channel_list + [cap.split('.')[0] for cap in cap_list]))
 

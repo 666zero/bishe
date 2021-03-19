@@ -1,7 +1,6 @@
-
 import sys
 
-
+#建立transition system，然后进行操作
 class State(object):
     def __init__(self, field, description):
         self.field = field
@@ -14,13 +13,14 @@ class Transition(object):
         self.act = act
         self.dst_index = dst_index
 
-
+#建立transition_system
 class TS(object):
     # S: set of state (list)
     # ACT: list of actions
     # TRANS: list of transitions
-    # AP: list of name of AP
+    # AP: list of name of AP,AP代表原子命题的集合
     # L: labeling function
+    #某种状态转换为另一种状态
     def __init__(self, ap_list):
         self.state_list = []
         self.act_list = []

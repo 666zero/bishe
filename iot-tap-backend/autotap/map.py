@@ -2,7 +2,7 @@
 
 import backend.models as m
 
-
+#設備會存儲相應的模板，其他的設備會按照trigger-action的格式存儲
 device_template = {
     'location_sensor': {'bedroom_anyone': 'bool, external', 'bathroom_nobody': 'bool, external', 'living_room_a_family_member': 'bool, external', 'bathroom_alice': 'bool, external', 'kitchen_a_family_member': 'bool, external', 'bedroom_nobody': 'bool, external', 'bedroom_a_guest': 'bool, external', 'kitchen_a_guest': 'bool, external', 'kitchen_alice': 'bool, external', 'bathroom_a_guest': 'bool, external', 'kitchen_anyone': 'bool, external', 'home_anyone': 'bool, external', 'home_a_family_member': 'bool, external', 'kitchen_nobody': 'bool, external', 'living_room_a_guest': 'bool, external', 'home_alice': 'bool, external', 'kitchen_bobbie': 'bool, external', 'bathroom_a_family_member': 'bool, external', 'living_room_alice': 'bool, external', 'bedroom_alice': 'bool, external', 'bathroom_bobbie': 'bool, external', 'living_room_anyone': 'bool, external', 'home_a_guest': 'bool, external', 'bedroom_a_family_member': 'bool, external', 'home_bobbie': 'bool, external', 'bathroom_anyone': 'bool, external', 'living_room_bobbie': 'bool, external', 'living_room_nobody': 'bool, external', 'bedroom_bobbie': 'bool, external', 'home_nobody': 'bool, external'},
     'front_door_lock': {'lockunlock_setting': 'bool'},

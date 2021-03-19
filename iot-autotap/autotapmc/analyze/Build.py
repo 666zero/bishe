@@ -1,22 +1,3 @@
-"""
-Copyright 2017-2019 Lefan Zhang
-
-This file is part of AutoTap.
-
-AutoTap is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-AutoTap is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with AutoTap.  If not, see <https://www.gnu.org/licenses/>.
-"""
-
 
 from autotapmc.utils.Parser import Operator, parse
 import re
@@ -25,7 +6,7 @@ from autotapmc.model.Tap import Tap
 from autotapmc.model.Template import generateDctForBool, generateDctForNumeric, generateDctForSet
 from autotapmc.model.Channel import Channel, MetaChannel
 
-
+#产生后缀表达式
 def _getValueDict(formula):
     value_dict = dict()
     re_splitter = r'(\s+|\(|\)|\&|\||!|<|>|=|F|G|U|W|\#|\*|X|@)'
@@ -113,7 +94,7 @@ def generateCriticalValue(ltl, tap_list):
             return False
 
     crit_value_dict = dict()
-
+#建立一个不重复集合
     value_dict = _getValueDict(ltl)
     for key, val_l in value_dict.items():
         if key in crit_value_dict:

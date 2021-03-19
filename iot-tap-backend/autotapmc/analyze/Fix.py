@@ -11,6 +11,7 @@ import itertools
 from .Build import generateChannelDict, ltlFormat, tapFormat, \
     getChannelList, generateTimeExp, generateCriticalValue, textToformula, namedTapFormat
 import autotapmc.channels.template.Evaluation as DeviceList
+from autotapmc.utils.Print import printObj
 
 
 class Patch(object):
@@ -353,6 +354,7 @@ def _getBadEdges(system, ltl, record_exp_list=[]):
 
     field_list = [state.field for state in ts.state_list]
     # Stage 1: generate all bad edges
+    # 得到所有的坏边
     bad_edges = list()
     other_edges = list()
     for edge in buchi_final.edge_list:
@@ -714,10 +716,13 @@ def _fixRegualarEdge(other_t, complete_edge_t):
 
 def generateCompactFix(ltl, tap_list, init_value_dict={}, template_dict=vars(DeviceList)):
     # stage 0: remove all duplicated taps
+    #print("移除所有的重複tap")
     tap_list = list(set(tap_list))
     # stage 1: find all critical value
+    #print("tap_list為"+ str(tap_list))
     crit_value_dict = generateCriticalValue(ltl, tap_list)
     # stage 2: find all timing expressions
+    #print("由tap_list產生的權值詞典為" + str(crit_value_dict))
     exp_t_list, record_exp_list = generateTimeExp(ltl, tap_list)
     # stage 3: generate channels
     channel_name_list, cap_name_list, tap_list = getChannelList(ltl, tap_list)
@@ -725,9 +730,11 @@ def generateCompactFix(ltl, tap_list, init_value_dict={}, template_dict=vars(Dev
     new_tap_list = tapFormat(tap_list, crit_value_dict)
     new_ltl = ltlFormat(ltl)
     # stage 4: generate system
+
     tap_dict = {'rule'+str(key): value for key, value in zip(range(len(new_tap_list)), new_tap_list)}
     channel_dict = generateChannelDict(channel_name_list, crit_value_dict,
                                        init_value_dict, cap_name_list, template_dict)
+    #print("此時產生一個system")
     system = _fixPreProcessing(
         channel_dict=channel_dict,
         tap_dict=tap_dict,
@@ -752,7 +759,7 @@ def generateCompactFix(ltl, tap_list, init_value_dict={}, template_dict=vars(Dev
         tap.trigger = textToformula(tap.trigger)
         tap.condition = [textToformula(cond) for cond in tap.condition]
         tap.action = [textToformula(act) for act in tap.action]
-
+    #print("拿到了result_taps")
     return result_taps
 
 

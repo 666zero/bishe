@@ -6,6 +6,7 @@ from django.http import HttpResponse, JsonResponse
 from django.template import loader
 import backend.models as m
 import os, sys
+
 from autotapmc.analyze.Fix import generateCompactFix, generateNamedFix
 from autotapmc.model.Tap import Tap
 from django.views.decorators.csrf import csrf_exempt
@@ -13,9 +14,11 @@ from autotap.translator import tap_to_frontend_view, translate_sp_to_autotap_ltl
     translate_rule_into_autotap_tap, generate_all_device_templates, backend_to_frontend_view
 from autotap.testdata import property_user_task_list, rule_user_task_list, task_ltl_dict, \
     correct_property_user_task_list, mutated_rule_user_task_list, multiple_property_user_task_list
+
 import itertools
 import json
-
+import pdb
+from autotapmc.utils.Print import printObj
 
 def get_or_make_user(code,mode):
     try:
@@ -25,7 +28,6 @@ def get_or_make_user(code,mode):
         user.save()
 
     return user
-
 
 def get_user_id(user_id):
     n_code = False
@@ -111,7 +113,7 @@ def expand_autotap_result_into_patches_named(patch_list, label_list, is_compact=
         result_list = {k: tap_to_frontend_view(tap) for k, tap in zip(label_list, patch_list)}
     return result_list
 
-
+#把autotap擴展為patch
 def expand_autotap_result_into_patches_unnamed(patch_list, is_compact=False):
     if not is_compact:
         action_list = [tap.action for tap in patch_list]
@@ -131,9 +133,11 @@ def parse_fix_request(request):
         kwargs = request.GET
     elif request.method == 'POST':
         kwargs = json.loads(request.body.decode('utf-8'))
+        #print("翻译fix请求" + str(kwargs))
     else:
         raise Exception('The request is neither a POST or a GET.')
-
+#model.get函数返回的是字典类型
+#model.filter返回的是对象类型
     try:
         user_rules = m.User.objects.get(id=kwargs['userid'], mode="rules")
         user_id_rules = user_rules.id
@@ -156,7 +160,7 @@ def parse_fix_request(request):
         is_named = int(kwargs['named'])
     except KeyError:
         is_named = 1
-
+#返回的是字典类型
     return {'user_id_rules': user_id_rules, 'user_id_sp': user_id_sp,
             'task_id': task_id, 'is_compact': is_compact, 'is_named': is_named}
 
@@ -207,7 +211,7 @@ def synthesize(request):
         template = loader.get_template('synthesize.html')
         user_task_list = ['%s %s' % (code, str(task)) for code, task, score in property_user_task_list]
         return HttpResponse(template.render(context={'user_task_list': user_task_list}))
-
+    #使用safePro进行检测
     elif request.method == 'POST':
         action = request.POST.get('action')
         http_content = ''
@@ -325,8 +329,11 @@ def reproduce(request):
 @csrf_exempt
 def fix(request):
     json_resp = dict()
+    #print("进入fix函数")
+    #pdb.set_trace();
     try:
         req_dict = parse_fix_request(request)
+        #print(str(request.body))
         user_id_rules = req_dict['user_id_rules']
         user_id_sp = req_dict['user_id_sp']
         task_id = req_dict['task_id']
@@ -334,29 +341,42 @@ def fix(request):
         is_compact = req_dict['is_compact']
 
         rule_list = m.Rule.objects.filter(task=task_id, owner=user_id_rules)
+        #根据访问ID和任务ID建立连接关系
         sp_list = m.SafetyProp.objects.filter(task=task_id, owner=user_id_sp)
-
-        ltl_list = [translate_sp_to_autotap_ltl(sp) for sp in sp_list]
+#把SP转换为LTL
+        ltl_list = []
+        for sp in sp_list:
+            ltl_list.append(translate_sp_to_autotap_ltl(sp))
+        #ltl_list = [translate_sp_to_autotap_ltl(sp) for sp in sp_list]
         if ltl_list:
             ltl = '!(%s)' % ' & '.join(ltl_list)
         else:
             ltl = '!(1)'
-
+        #print("得到的ltl_list为" + str(ltl_list))
         template_dict = generate_all_device_templates()
+       # print("得到的template模板为" + str(template_dict))
         if is_named:
+            #print("is_named为1")
             tap_dict = {str(k): translate_rule_into_autotap_tap(v) for k, v in zip(range(len(rule_list)), rule_list)}
+           # print("tap_dict为"+ tap_dict)
             tap_patch, tap_label = generateNamedFix(ltl, tap_dict, {}, template_dict)
             result_list = expand_autotap_result_into_patches_named(tap_patch, tap_label, is_compact)
             orig_rule_dict = {str(k): backend_to_frontend_view(v) for k, v in zip(range(len(rule_list)), rule_list)}
-
+#如何把原先的运行图生产规则
             json_resp['original'] = orig_rule_dict
             json_resp['patches'] = result_list
         else:
+            #print("is_named为0")
             tap_list = [translate_rule_into_autotap_tap(v) for v in rule_list]
+            #print("拿到了tap_list")
             tap_patch = generateCompactFix(ltl, tap_list, {}, template_dict)
+            #print("拿到了tap_patch" + str(tap_patch))
             result_list = expand_autotap_result_into_patches_unnamed(tap_patch, is_compact)
+            #print("拿到了result_list")
             orig_rule_list = [backend_to_frontend_view(v) for v in rule_list]
-
+#前端輸入的相當于是個模板
+            #print("orig_rule_list为" + str(orig_rule_list))
+           # print("result_list为" + str(result_list))
             json_resp['original'] = orig_rule_list
             json_resp['patches'] = result_list
         json_resp['succeed'] = True

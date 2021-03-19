@@ -6,7 +6,6 @@ class Operator(object):
         self.precedence = precedence
         self.associativity = associativity
 
-
 ops = {
     '!': Operator('!', 1, 3, 0),
     'U': Operator('U', 2, 2, 1),
@@ -15,6 +14,5 @@ ops = {
     '&': Operator('&', 2, 1, 0),
     '|': Operator('|', 2, 1, 0)
 }
-
 
 re_splitter = r'(\s+|U|V|X|\(|\)|\&|\||!)'

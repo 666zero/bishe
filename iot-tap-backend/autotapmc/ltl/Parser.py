@@ -1,8 +1,6 @@
 
-
 import re
 from autotapmc.ltl.Operators import ops, re_splitter
-
 
 def _nextToken(formula):
     if not formula:

@@ -8,6 +8,7 @@ import sys
 import os
 import collections
 from autotapmc.model.Tap import Tap
+import pdb
 
 
 def split_autotap_formula(formula):
@@ -91,7 +92,7 @@ def _regular_statement_clause_generator(dev_autotap, cap_autotap, par_autotap, c
     if par_autotap == 'bpm':
         par_autotap = par_autotap.upper()
     # Step 1: find the device
-
+    # 找到一个bpm
     # Step 2: find the capability
     cap_list_backend = list(device.caps.all().order_by('id'))
     cap_name_list = [_cap_name_to_autotap(cap.name) for cap in cap_list_backend]
@@ -401,11 +402,11 @@ def autotap_simple_formula_to_clause(formula, flag=0):
 
 def autotap_formula_to_clause(formula, flag=0):
     """
-
     :param formula: the tap formula such as 'ac.power=false'
     :param flag: 0 - state, 1 - event, 2 - command
     :return:
     """
+    #5，-1从5到最后
     if formula.startswith('tick'):
         formula = formula[5:-1]
         if '*' in formula:
@@ -515,7 +516,7 @@ def tap_to_frontend_view(tap):
 
     return clause
 
-
+#将翻译好的规则转换为前端的json格式
 def backend_to_frontend_view(rule):
     # translate m.Rule into frontend json format
     rule = rule.esrule
@@ -630,11 +631,14 @@ def generate_all_device_templates():
 
     return template_dict
 
-
+#關鍵數據結構
+#處理trigger的statement
 def trigger_to_autotap_statement(clause, if_event=False):
+    #print("進入了trigger_to_autotap_statement")
     irregular_cap_list = [9, 25, 26, 56, 35, 30, 31, 33, 32, 52, 51, 49, 50, 29, 63, 37]
     if clause['capability']['id'] not in irregular_cap_list:
         # should be only one parameter
+        #print("進入了trigger_to_autotap_statement只有一個參數")
         param = clause['parameters'][0]
         param_val = clause['parameterVals'][0]
         if param['type'] == 'bin':
@@ -652,7 +656,7 @@ def trigger_to_autotap_statement(clause, if_event=False):
             else:
                 value = 'true' if param_val['value'] == m.BinParam.objects.get(id=param['id']).fval else 'false'
             clause_statement = var_name + param_val['comparator'] + value
-
+            #print("clause_statement為" + str(clause_statement))
         elif param['type'] in ('range', 'set'):
             var_name = clause['capability']['name'] + ' ' + param['name']
             var_name = _var_name_to_autotap(var_name)
@@ -670,6 +674,7 @@ def trigger_to_autotap_statement(clause, if_event=False):
     else:
         if clause['capability']['id'] == 63:
             # this is location sensor
+            #位置傳感器信息進行特殊處理
             param_list = clause['parameters']
             param_val_list = clause['parameterVals']
 
@@ -869,16 +874,17 @@ def _actionize(statement, time=None):
                 s_list = ['@%s=%s' % (dev_cap, value) for value in value_autotap_list if value != orig_value]
                 return '(' + ' | '.join(s_list) + ')'
 
-
+#把sp转换为LTL,把sp转换为LTL公式
 def translate_sp_to_autotap_ltl(sp):
     if sp.type == 1:
+        #print("sp.type为1")
         sp1 = sp.sp1
         if_always = sp1.always
         triggers = sp1.triggers.all().order_by('pos')
         state_list = list(triggers)
-
         statement_list = [trigger_to_autotap_statement(trigger_to_clause(trigger, False), False)
                           for trigger in state_list]
+        #存在always就把之前的公式给打上
         if if_always:
             neg_statement_list = ['!' + statement for statement in statement_list]
             return 'G((%s) | (%s))' % (' & '.join(statement_list), ' & '.join(neg_statement_list))
@@ -886,6 +892,7 @@ def translate_sp_to_autotap_ltl(sp):
             return '!F(%s)' % (' & '.join(statement_list))
 
     elif sp.type == 2:
+        #print("sp.type为2")
         sp2 = sp.sp2
         if_always = sp2.always
         clause = sp2.state
@@ -919,6 +926,7 @@ def translate_sp_to_autotap_ltl(sp):
                 else:
                     return '!F(%s)' % state
     elif sp.type == 3:
+        #print("sp.type为3")
         sp3 = sp.sp3
         if_always = sp3.always
         clause = sp3.event
@@ -951,24 +959,28 @@ def translate_sp_to_autotap_ltl(sp):
 
 def translate_rule_into_autotap_tap(rule):
     """
-
     :param rule:
     :return:
     """
+    #进入翻译函数
+    #print("进入翻译规则函数")
+    #pdb.settrace()
     try:
         esrule = m.ESRule.objects.get(id=rule.id)
-
+        #print("esrule为" + str(esrule))
         trigger = trigger_to_clause(esrule.Etrigger, True)
+        #print("trigger为" + str(trigger))
         trigger_statement = trigger_to_autotap_statement(trigger, True)
-
+        #print("trigger_statement为" + str(trigger_statement))
         # conditions of the rule
         condition_list = [trigger_to_clause(cond, False) for cond in esrule.Striggers.all()]
         condition_statement_list = [trigger_to_autotap_statement(cond, False) for cond in condition_list]
 
         # action of the rule
         action = state_to_clause(esrule.action)
+        #condition和state轉換為clause，轉換為json格式，最後轉換為autotap格式
         action_statement = trigger_to_autotap_statement(action, True)
-
+    #拿到了不同的action的statement，trigger_statement,condition_statement然後進行相應的處理
         return Tap(action_statement, trigger_statement, condition_statement_list)
     except Exception as exc:
         raise exc

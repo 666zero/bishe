@@ -4,76 +4,50 @@
     <bookmark url="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.component.html" line="1" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f4c38f-a802-4c29-ab9c-bd3e359d4b78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+    <list default="true" id="87f4c38f-a802-4c29-ab9c-bd3e359d4b78" name="Default Changelist" comment="2021/3/5">
+      <change afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/rci/rule-creator/rule-creator.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/rci/rule-creator/rule-creator.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/sp-creator/sp-creator2/sp-creator2.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/sp-creator/sp-creator2/sp-creator2.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/sp-creator/sp-creator3/sp-creator3.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/sp-creator/sp-creator3/sp-creator3.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/user-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/user-data.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vi.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vi.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-autotap/autotapmc/analyze/Build.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-autotap/autotapmc/analyze/Build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-autotap/autotapmc/analyze/Fix.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-autotap/autotapmc/analyze/Fix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-autotap/autotapmc/model/Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-autotap/autotapmc/model/Template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/testdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/testdata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/translator.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/translator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotap/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotap/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Analyze.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Build.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Build.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Draw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Fix.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Fix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/Buchi.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/Buchi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/AirConditioner.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/AirConditioner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Clock.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Clock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/CoffeeMachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/CoffeeMachine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/GarageDoor.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/GarageDoor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Light.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Light.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Location.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Location.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Outlet.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Outlet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Oven.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Oven.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/TV.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/TV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Weather.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Window.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Operators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/SubFormula.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/SubFormula.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Channel.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Channel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/IoTSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/IoTSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Tap.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Tap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/TransitionSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/TransitionSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Boolean.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Boolean.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/backend/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/backend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/backend/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/backend/reqmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/backend/reqmap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/backend/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/backend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-tap-backend/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/backend/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/rule_management/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/rule_management/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/rule_management/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/rule_management/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/rule_management/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/rule_management/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/rule_management/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/rule_management/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/rule_management/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/rule_management/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/rule_management/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/rule_management/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/st_end/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/st_end/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/user_auth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/user_auth/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/user_auth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/user_auth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/user_auth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/user_auth/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/user_auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/user_auth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/user_auth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/user_auth/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-tap-backend/user_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/iot-tap-backend/user_auth/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,99 +55,88 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/autotap$views.coverage" NAME="views Coverage Results" MODIFIED="1615548926055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iot-tap-backend/autotap" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/karma.conf.js">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="322">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/typings.d.ts">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Algorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/styles.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/user-data.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1219">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="161">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.module.ts">
+        <entry file="file://$PROJECT_DIR$/test/test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Draw.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Build.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="47" />
+            <state relative-caret-position="966">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="21" />
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#2#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/environments/environment.ts">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="736">
+              <caret line="34" column="43" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/Buchi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10741">
+              <caret line="474" column="23" selection-start-line="474" selection-start-column="12" selection-end-line="474" selection-end-column="23" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/xsrf.interceptor.ts">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/backend/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3611">
+              <caret line="158" column="1" selection-start-line="158" selection-start-column="1" selection-end-line="158" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/environments/environment.prod.ts">
+        <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/TransitionSystem.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -186,72 +149,95 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>translate_sp_to_autotap_ltl</find>
+      <find>sp</find>
+      <find>parse_fix_request</find>
+      <find>trigger_to_clause</find>
+      <find>clause_statement</find>
+      <find>is_compact</find>
+      <find>由tap_list產生的</find>
+      <find>generateCompactFix</find>
+      <find>pdb.</find>
+      <find>pdb</find>
+      <find>state_to_clause</find>
+      <find>IoTs</find>
+      <find>transition_system</find>
+      <find>getBadEdges</find>
+      <find>getStateAcc</find>
+      <find>translate_rule_into_autotap_tap</find>
+      <find>tapFormat</find>
+      <find>generateCriticalValue</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/urls.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Build.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/models.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Fix.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/Buchi.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Operators.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Parser.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/SubFormula.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/IoTSystem.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Tap.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Template.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/TransitionSystem.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Algorithm.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Boolean.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Parser.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/backend/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/backend/reqmap.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/backend/settings.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/__init__.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/admin.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/apps.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/models.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/tests.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/urls.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/st_end/views.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/user_auth/__init__.py" />
         <option value="$PROJECT_DIR$/iot-tap-backend/user_auth/admin.py" />
         <option value="$PROJECT_DIR$/iot-tap-backend/user_auth/apps.py" />
         <option value="$PROJECT_DIR$/iot-tap-backend/user_auth/models.py" />
         <option value="$PROJECT_DIR$/iot-tap-backend/user_auth/tests.py" />
         <option value="$PROJECT_DIR$/iot-tap-backend/user_auth/views.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/backend/models.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/backend/urls.py" />
         <option value="$PROJECT_DIR$/test/test.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/backend/views.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/map.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/translator.py" />
         <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Analyze.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Draw.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/views.py" />
-        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Channel.py" />
         <option value="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/user-data.service.ts" />
         <option value="$PROJECT_DIR$/iot-tap-backend/manage.py" />
         <option value="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.ts" />
+        <option value="$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vi.module.ts" />
+        <option value="$PROJECT_DIR$/iot-autotap/autotapmc/model/Template.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/IoTSystem.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Boolean.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Draw.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Channel.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Parser.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/map.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/backend/urls.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/models.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/TransitionSystem.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Tap.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/Buchi.py" />
+        <option value="$PROJECT_DIR$/iot-autotap/autotapmc/analyze/Build.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Fix.py" />
+        <option value="$PROJECT_DIR$/iot-autotap/autotapmc/analyze/Fix.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/backend/views.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/views.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotap/translator.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Print.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Parser.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Light.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/GarageDoor.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/CoffeeMachine.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Clock.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/AirConditioner.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Template.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Outlet.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Location.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Oven.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/TV.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Weather.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Operators.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Build.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/__init__.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Window.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/RuleGraph.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Algorithm.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/backend/models.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Graph.py" />
+        <option value="$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Algorithm.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="387" />
-    <option name="y" value="138" />
-    <option name="width" value="1378" />
+    <option name="x" value="46" />
+    <option name="y" value="126" />
+    <option name="width" value="1386" />
     <option name="height" value="539" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -267,88 +253,13 @@
             <path>
               <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="ifttt-frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
               <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="autotapmc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="autotapmc" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="autotapmc" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
-              <item name="autogen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="autotapmc" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
-              <item name="devgen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="autotapmc" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="autotapmc" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotap" type="462c0819:PsiDirectoryNode" />
               <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="rule_management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="rule_management" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="st_end" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotap" type="462c0819:PsiDirectoryNode" />
-              <item name="iot-tap-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="st_end" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -360,10 +271,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="tslint.code.style.apply.dismiss" value="true" />
   </component>
   <component name="RecentsManager">
@@ -383,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.views">
     <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autotap" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -406,8 +317,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autotap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iot-tap-backend/autotap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iot-tap-backend/autotap/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.settings" />
       </list>
     </recent_temporary>
@@ -443,12 +377,42 @@
       <workItem from="1614388685366" duration="3550000" />
       <workItem from="1614477015322" duration="5570000" />
       <workItem from="1614736533234" duration="6244000" />
-      <workItem from="1614905042867" duration="4151000" />
+      <workItem from="1614905042867" duration="29112000" />
+      <workItem from="1615115283397" duration="46740000" />
+      <workItem from="1615374466921" duration="2405000" />
+      <workItem from="1615382241746" duration="581000" />
+      <workItem from="1615428308954" duration="14735000" />
+      <workItem from="1615513247766" duration="5708000" />
+      <workItem from="1615535760265" duration="1948000" />
+      <workItem from="1615550020002" duration="3050000" />
+      <workItem from="1615601582823" duration="1079000" />
+      <workItem from="1615632905038" duration="593000" />
+      <workItem from="1615688706827" duration="3889000" />
+      <workItem from="1615720667681" duration="5062000" />
+      <workItem from="1615772416779" duration="3791000" />
+      <workItem from="1615786355417" duration="3020000" />
+      <workItem from="1615799514821" duration="1537000" />
+      <workItem from="1615944695106" duration="1303000" />
+      <workItem from="1615966084688" duration="5073000" />
+      <workItem from="1615979709613" duration="6356000" />
+      <workItem from="1616030755276" duration="5775000" />
+      <workItem from="1616049109640" duration="2919000" />
+      <workItem from="1616067477592" duration="1929000" />
+      <workItem from="1616117963907" duration="527000" />
+      <workItem from="1616121593831" duration="172000" />
     </task>
+    <task id="LOCAL-00001" summary="2021/3/5">
+      <created>1614910570973</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614910570973</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178463000" />
+    <option name="totallyTimeSpent" value="321616000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -462,24 +426,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26793557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16764276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.07436709" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.049050633" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.5408472" visible="true" weight="0.074074075" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.5322108" visible="true" weight="0.20253165" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.4969743" visible="true" weight="0.29746836" />
+      <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.5161054" visible="true" weight="0.13607594" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.5869894" weight="0.22459017" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.4591528" side_tool="true" weight="0.23934427" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.46778917" side_tool="true" weight="0.20253165" />
       <window_info anchor="bottom" id="Python Console" order="14" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -491,6 +456,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2021/3/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021/3/5" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -499,320 +468,308 @@
           <line>2</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Algorithm.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Fix.py</url>
+          <line>760</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/autogen/__init__.py">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotap/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotap/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotap/translator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10727">
+          <caret line="506" column="18" selection-start-line="506" selection-start-column="8" selection-end-line="506" selection-end-column="18" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotap/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotap/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8257">
+          <caret line="359" column="63" selection-start-line="359" selection-start-column="32" selection-end-line="359" selection-end-column="63" />
+          <folding>
+            <element signature="e#1#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Boolean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Light.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/GarageDoor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/CoffeeMachine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Clock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/AirConditioner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/devgen/AirConditioner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/devgen/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/devgen/AirConditioner.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/template/__init__.py">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/autogen/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/template/DbTemplate.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/template/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/template/Evaluation.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Outlet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Oven.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/TV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Weather.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/database/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/database/Db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Operators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/Parser.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ltl/SubFormula.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Channel.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/model/Tap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2392">
+          <caret line="104" column="44" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/channels/Window.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/model/IoTSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/utils/Print.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="19" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vi.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vi.module.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vipage/vipage.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vipage/vipage.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vipage/vipage.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vipage/vipage.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="44" column="50" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vibase/vibase.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2809" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vibase/vibase.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vibase/vibase.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/vi/vibase/vibase.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spmi/spmibase/spmibase.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spmi/spmibase/spmibase.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spmi/spmibase/spmibase.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spmi/spmibase/spmibase.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-tap-backend/run.wsgi">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-tap-backend/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iot-tap-backend/loadrules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/channel-selector/channel-selector.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.html">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/spci/capability-selector/capability-selector.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/tsconfig.app.json">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Draw.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/tsconfig.spec.json">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="e#2#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/analyze/Analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/test.ts">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/buchi/Buchi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166" />
+        <state relative-caret-position="10741">
+          <caret line="474" column="23" selection-start-line="474" selection-start-column="12" selection-end-line="474" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/polyfills.ts">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/backend/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3611">
+          <caret line="158" column="1" selection-start-line="158" selection-start-column="1" selection-end-line="158" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/ts/TransitionSystem.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/index.html">
+    <entry file="file://$PROJECT_DIR$/iot-tap-backend/autotapmc/graph/Algorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157" />
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/tslint.json">
+    <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/protractor.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/typings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/xsrf.interceptor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/user-data.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1219">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifttt-frontend/rule-creation/RMI/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
   </component>
 </project>

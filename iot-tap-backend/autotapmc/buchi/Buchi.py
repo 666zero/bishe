@@ -1,5 +1,3 @@
-
-
 import spot
 import buddy
 from autotapmc.ts.TransitionSystem import TS, State, Transition
@@ -18,6 +16,7 @@ ops = {
 
 re_splitter = r'(\s+|\(|\)|\&|\||!)'
 
+#产生默认的BDD描述
 default_bdd_dict = spot.make_bdd_dict()
 
 
@@ -28,6 +27,7 @@ class BuchiState(object):
         self.acc = acc
         self.description = description
 
+#buchi自動機的state有index,acc和描述組成
 
 class BuchiEdge(object):
     """ Data structure to store information in a state-based (generalized) buchi automaton """
@@ -36,8 +36,11 @@ class BuchiEdge(object):
         self.dst = dst
         self.ap = ap
         self.description = description
-
-
+#两个节点的边由原边和目的边，标签系统和描述组成
+#状态表示当前系统的设备的状态
+#变迁代表发生了一个动作
+#状态的集合，输入字母表，接受状态，初始状态，变迁关系
+#acc_num代表总共有多少个
 class BaseBuchi(object):
     """ Basic infrastructure for both GBA and BA """
     def __init__(self):
@@ -54,7 +57,7 @@ class BaseBuchi(object):
 
     def getInitState(self):
         return self.init_state
-
+#添加buchi的状态
     def addState(self, index, description, acc):
         self.state_dict[index] = BuchiState(index, description, acc)
 
@@ -88,14 +91,19 @@ class BaseBuchi(object):
         :param bdict: the bdd_dict that the output automaton uses
         :return: an spot generalized buchi automaton
         """
+#创建新的buchi自动机
+#创建新的标签list和状态map
+#接受无限字代表可以无限次的访问接受状态
+#最小化自动机，用传统的DFA优化
         aut = spot.make_twa_graph(bdict)
+        #这里生成的是BGA
         ap_list = dict()
         state_map = dict()
 
         for ap in self.ap_list:
             # if ap not in ['0', '1']:
             ap_list[ap] = buddy.bdd_ithvar(aut.register_ap(ap))
-
+#设置接受状态的数量
         aut.set_generalized_buchi(self.acc_num)
 
         aut.prop_state_acc(1)
@@ -105,9 +113,9 @@ class BaseBuchi(object):
             aut.new_state()
             state_map[index] = new_index
             new_index = new_index + 1
-
+#设置初始状态
         aut.set_init_state(state_map[self.getInitState()])
-
+#设置ap_stack处理token字段
         for edge in self.edge_list:
             acc = self.getStateAcc(edge.src)
             ap_calc_list = parse(edge.ap, ops, re_splitter)
@@ -131,7 +139,7 @@ class BaseBuchi(object):
                     raise Exception('Unknown AP token %s in edge formula' % token)
             if len(ap_stack) != 1:
                 raise Exception('Wrong edge AP formula format!')
-
+#生成新的边
             aut.new_edge(state_map[edge.src], state_map[edge.dst], ap_stack[0], acc)
 
         return aut, state_map
@@ -199,7 +207,7 @@ class GenBuchi(BaseBuchi):
 
     def setAccNum(self, acc_num):
         self.acc_num = acc_num
-
+#总共几点顶点代表几个接收状态
     def setStateAcc(self, index, acc):
         if index not in self.state_dict:
             raise Exception('State index %d invalid!' % index)
@@ -230,7 +238,7 @@ def tsToBuchi(ts):
     label_list = ts.label_list
     trans_list = ts.trans_list
     ap_list = ts.ap_list
-
+#创建新的Buchi自动机
     buchi = Buchi()
 
     for ap in ap_list:
@@ -245,7 +253,7 @@ def tsToBuchi(ts):
         index_src = field_list.index(trans.src_field)
         index_dst = field_list.index(trans.dest_field)
         description = trans.act
-
+#描述的匹配含义
         if description.startswith('rule('):
             action_name = re.match(r'rule\(([\s\S]+)\)->(?P<action>[^ ]+)$', description).group('action')
         else:
@@ -263,7 +271,7 @@ def tsToBuchi(ts):
         ap = ' & '.join(label)
         ap = ap + ' & %s' % action_name
         buchi.addEdge(index_src, index_dst, ap, description)
-
+#建立自己的buchi模型
     return buchi
 
 
@@ -390,7 +398,7 @@ def tsToGenBuchi(ts, record_exp_list=[]):
 
     return buchi
 
-
+#转换LTL到Spot
 def ltlToSpot(formula):
     """
     Translate LTL formula to Buchi Automaton with spot
@@ -401,7 +409,7 @@ def ltlToSpot(formula):
     aut = spot.translate(formula, 'BA', dict=default_bdd_dict)
     return aut
 
-
+#spot表示转换为buchi自动机
 def spotToBuchi(aut, state_map=None):
     """
     Translate spot representation back to Buchi object or GenBuchi object
@@ -455,7 +463,7 @@ def spotToBuchi(aut, state_map=None):
 
     return buchi
 
-
+#把LTL转换为Buchi里
 def ltlToBuchi(formula):
     """
     Translate LTL formula to Buchi Automaton (Buchi)
