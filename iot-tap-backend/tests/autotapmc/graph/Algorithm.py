@@ -1,0 +1,4 @@
+
+def checkRevert(graph):
+
+    bitmap =
